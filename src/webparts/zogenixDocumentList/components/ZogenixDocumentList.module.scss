@@ -1,0 +1,64 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+
+.dynamicTabs {
+  .container {
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .pivot {
+    [role="tablist"] {
+      background: #a20067;
+      border-radius: 32px;
+      width: 100%;
+      display: table-cell;
+      padding: 10px;
+    }
+
+    button {
+      color: #fff;
+      height: 40px;
+      padding: 5px 20px !important;
+      background-color: transparent;
+    }
+
+    [class*="is-selected"] {
+      background: #fff;
+      border-radius: 20px;
+      color: #a20067 !important;
+    }
+
+    [class*="is-selected"]::before {
+      border: 0px !important;
+    }
+  }
+
+  .headerrow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    div {
+      color: #a20067;
+      font-size: 13px;
+      padding: 5px;
+      flex: 1;
+      font-weight: 600;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: 10px 0;
+
+    div {
+      color: #636161;
+      padding: 10px 5px;
+      font-size: 13px;
+      flex: 1;
+    }
+  }
+}
